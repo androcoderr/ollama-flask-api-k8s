@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: aysenur2763/ai-code-assistant
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 5000
+
+ollamaApiUrl: http://ollama:11434
